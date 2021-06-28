@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Testoune</h1>
+<div>
+
+    <div>{{ "now"|date('Y') }}</div>
+
+    {# cree une variable ! #}
+    {%  set name = "Guillaumeéé" %}
+    <h2>{{ name|length }}</h2>
+
+    {# cree un tableau #}
+    {% set colors = ["orange", "brown", "turquoise", "blue"] %}
+    <div>Nombre de couleurs : {{ colors|length }}</div>
+    <div>{{ colors|join(' / ') }}</div>
+
+    {% for color in colors %}
+        <div>{{  loop.last }}</div>
+        <div style="background-color: {{ color }}">{{ color }}</div>
+    {% endfor %}
+
+    {# un objet #}
+    {% set book = {
+        title: 'pifpaf',
+        year: 2000,
+        author: "John Doe"}
+    %}
+    <h3>{{ book.author }}</h3>
+    <div>
+        {% for key, val in book %}
+            <div>{{ key }} : {{ val }}</div>
+        {%  endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block title %}{{ parent() }} | Testounet{% endblock %}
