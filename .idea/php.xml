@@ -131,6 +131,7 @@
       <path value="$PROJECT_DIR$/edwmc053/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/edwmc053/vendor/symfony/expression-language" />
       <path value="$PROJECT_DIR$/edwmc053/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/edwmc053/vendor/symfonycasts/reset-password-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
