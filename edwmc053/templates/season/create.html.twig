@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div>
+        {{ form_start(seasonForm) }}
+        {{ form_widget(seasonForm) }}
+        <button>Create Season !</button>
+        {{ form_end(seasonForm) }}
+
+    </div>
+
+{% endblock %}
+
+{% block title %}
+
+    create a new season | {{ parent() }}
+
+{% endblock %}
+
+
+
